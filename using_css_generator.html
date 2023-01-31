@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .container{
+            height:80vh;
+        }
+
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin:100px auto 0px;
+            border: 1px solid black;
+            animation: myAnim 2s ease 0s 10 normal forwards;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto 0px;
+            border: 1px solid black;
+            animation: myAnim1 3s ease 0s 10 normal forwards;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto 0px;
+            border: 1px solid black;
+            animation: myAnim2 3s ease 0s 10 normal forwards;
+        }
+
+        .box3 {
+            animation: myAnim3 1s ease 0s 10 normal forwards;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto 0px;
+            border: 1px solid black;
+            animation: myAnim3 3s ease 0s 10 normal forwards;
+        }
+
+
+        @keyframes myAnim {
+            0%, 100% {
+                transform: translateX(0%);
+                transform-origin: 50% 50%;
+            }
+
+            15% {
+                transform: translateX(-30px) rotate(-6deg);
+            }
+
+            30% {
+                transform: translateX(15px) rotate(6deg);
+            }
+
+            45% {
+                transform: translateX(-15px) rotate(-3.6deg);
+            }
+
+            60% {
+                transform: translateX(9px) rotate(2.4deg);
+            }
+
+            75% {
+                transform: translateX(-6px) rotate(-1.2deg);
+            }
+        }
+
+
+        @keyframes myAnim1 {
+            0% {
+                transform: scale(0.5);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+
+        @keyframes myAnim2 {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes myAnim3 {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 0;
+                transform: translateY(-250px);
+            }
+
+            38% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            55% {
+                animation-timing-function: ease-in;
+                transform: translateY(-65px);
+            }
+
+            72% {
+                animation-timing-function: ease-out;
+                transform: translateY(0);
+            }
+
+            81% {
+                animation-timing-function: ease-in;
+                transform: translateY(-28px);
+            }
+
+            90% {
+                animation-timing-function: ease-out;
+                transform: translateY(0);
+            }
+
+            95% {
+                animation-timing-function: ease-in;
+                transform: translateY(-8px);
+            }
+
+            100% {
+                animation-timing-function: ease-out;
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    =========================================================
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+
+    ============================================================
+
+    <div class="container">
+        <div class="box2"></div>
+    </div>
+
+    ============================================================
+
+    <div class="container">
+        <div class="box3"></div>
+    </div>
+
+
+    https://webcode.tools/generators/css/box-resize  --- tool link
+</body>
+</html>
